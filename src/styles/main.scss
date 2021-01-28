@@ -1,0 +1,76 @@
+@import 'base/index.scss';
+
+.articles-container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.article {
+  min-width: 440px;
+  margin: $mm-size;
+  border-bottom: 1px solid $grey-light;
+
+  &-category {
+    display: block;
+    font-size: $s-size;
+    color: $blue;
+    margin-bottom: $s-size;
+  }
+
+  &-heading {
+    font-family: $merriweather;
+    font-size: $l-size;
+    color: $black;
+    margin-top: -$xs-size;
+    margin-bottom: $xs-size;
+  }
+
+  &-heading-link {
+    color: $black;
+  }
+
+  &-detail-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $ms-size;
+  }
+
+  &-image {
+    width: 150px;
+    margin-right: $ms-size;
+    object-fit: cover;
+  }
+
+  &-standfirst {
+    color: $grey;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: $ml-size;
+    position: relative;
+    padding-right: 320px;
+    min-height: 245px;
+
+    &-category {
+      font-size: $mm-size;
+      margin-bottom: $xs-size;
+    }
+
+    &-heading {
+      font-size: $xl-size;
+      margin-top: 0;
+    }
+
+    &-image {
+      width: 300px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: 0;
+    }
+
+    &-standfirst {
+      font-size: $ml-size;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+// Fonts
+$source-sans: 'Source Sans Pro', sans-serif;
+$merriweather: 'Merriweather', serif;
+
+// Font setting
+$body-font: $source-sans;
+
+// Colors
+$black: #000000;
+$grey: #606669;
+$grey-light: #dddddd;
+$blue: #0059bf;
+
+// Spacing
+$xs-size: 1.2rem;
+$s-size: 1.4rem;
+$ms-size: 1.6rem;
+$mm-size: 1.8rem;
+$ml-size: 1.9rem;
+$l-size: 2.4rem;
+$xl-size: 3.1rem;
