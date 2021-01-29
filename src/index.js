@@ -1,8 +1,8 @@
 import '../src/styles/main.scss';
 
 // Helper function to create a DOM element
-const createNode = element => {
-  return document.createElement(element)
+const createNode = el => {
+  return document.createElement(el)
 }
 
 // Helper function to append a child element to a parent element
@@ -20,13 +20,13 @@ fetch('data/news.json')
   
     return articles.map(article => {
       // Create DOM elements
-      const articleWrapper = createNode('div')
-      const articleHeading = createNode('h2')
-      const articleHeadingLink = createNode('a')
-      const articleDetailWrapper = createNode('div')
-      const articleStandfirst = createNode('p')
-      const articleImage = createNode('img')
-      const articleCategory = createNode('span')
+      const articleWrapper = createNode('div'),
+            articleHeading = createNode('h2'),
+            articleHeadingLink = createNode('a'),
+            articleDetailWrapper = createNode('div'),
+            articleStandfirst = createNode('p'),
+            articleImage = createNode('img'),
+            articleCategory = createNode('span')
 
       // Add custom classes to created DOM elements for styling purposes
       articleWrapper.classList.add('article')
